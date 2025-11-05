@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mehdi Dehghani Firouzabadi - AI Researcher & Developer">
+    <title>Mehdi Dehghani Firouzabadi - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .header .title {
+            font-size: 1.3em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 0.95em;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .contact-info a:hover {
+            opacity: 0.8;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .entry {
+            margin-bottom: 25px;
+            padding-left: 20px;
+            border-left: 3px solid #e0e0e0;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 5px;
+        }
+
+        .entry-title {
+            font-weight: 600;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .entry-date {
+            color: #666;
+            font-style: italic;
+        }
+
+        .entry-subtitle {
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .entry-description {
+            margin-top: 8px;
+            color: #555;
+        }
+
+        .entry ul {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .entry li {
+            margin-bottom: 5px;
+        }
+
+        .skills-grid {
+            display: grid;
+            gap: 15px;
+        }
+
+        .skill-item {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 15px;
+            padding: 10px 0;
+        }
+
+        .skill-label {
+            font-weight: 600;
+            color: #667eea;
+        }
+
+        .skill-value {
+            color: #555;
+        }
+
+        .interests-list, .honors-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .interests-list li, .honors-list li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .interests-list li:before, .honors-list li:before {
+            content: "▸";
+            color: #667eea;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .publication {
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+        }
+
+        .academic-activities {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            border-left: 4px solid #667eea;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .skill-item {
+                grid-template-columns: 1fr;
+                gap: 5px;
+            }
+
+            .entry-header {
+                flex-direction: column;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Mehdi Dehghani Firouzabadi</h1>
+            <div class="title">AI Researcher & Developer</div>
+            <div class="contact-info">
+                <span>📍 Tehran, Iran</span>
+                <span>📱 +98-9124764062</span>
+                <a href="mailto:mehdi274787@gmail.com">✉️ mehdi274787@gmail.com</a>
+                <a href="https://x.com/m_dehghani_" target="_blank">🐦 @m_dehghani_</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Education Section -->
+            <div class="section">
+                <h2>🎓 Education</h2>
+                
+                <div class="entry">
+                    <div class="entry-header">
+                        <div class="entry-title">M.Sc. in Computer Science (Data Mining)</div>
+                        <div class="entry-date">2020 - Present</div>
+                    </div>
+                    <div class="entry-subtitle">Tarbiat Modares University, Tehran, Iran</div>
+                    <div class="entry-description">
+                        <em>Thesis:</em> "An Improved Generative Model Based on Diffusion"
+                    </div>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-header">
+                        <div class="entry-title">M.Sc. in Computer Engineering (Artificial Intelligence)</div>
+                        <div class="entry-date">2006 - 2008</div>
+                    </div>
+                    <div class="entry-subtitle">Sharif University of Technology, Tehran, Iran</div>
+                    <div class="entry-description">
+                        <em>Thesis (not defended):</em> "Time-Varying Spectrum Estimation Using Fuzzy Methods"
+                    </div>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-header">
+                        <div class="entry-title">B.Sc. in Computer Engineering (Software)</div>
+                        <div class="entry-date">2002 - 2005</div>
+                    </div>
+                    <div class="entry-subtitle">Yazd University, Yazd, Iran</div>
+                    <div class="entry-description">
+                        Graduated in seven semesters with second rank<br>
+                        <em>Thesis:</em> "Design and Implementation of a Real Estate Web System"
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Experience Section -->
+            <div class="section">
+                <h2>💼 Professional Experience</h2>
+
+                <div class="entry">
+                    <div class="entry-header">
+                        <div class="entry-title">Startup MMMF</div>
+                        <div class="entry-date">2024 - Present</div>
+                    </div>
+                    <div class="entry-subtitle">Tehran, Iran</div>
+                    <ul>
+                        <li>Developed a time series forecasting framework for <strong>multivariate</strong> data using deep learning models.</li>
+                    </ul>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-header">
+                        <div class="entry-title">Freelance Instructor</div>
+                        <div class="entry-date">2020 - Present</div>
+                    </div>
+                    <div class="entry-subtitle">Tehran, Iran</div>
+                    <ul>
+                        <li>Providing instruction in <strong>Python Programming</strong>, <strong>Machine Learning</strong>, and <strong>Deep Learning</strong>.</li>
+                    </ul>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-header">
+                        <div class="entry-title">Rahian Software Development</div>
+                        <div class="entry-date">2015 - 2019</div>
+                    </div>
+                    <div class="entry-subtitle">Tehran, Iran</div>
+                    <ul>
+                        <li>Collaborated in developing an intelligent gate barrier system designed for parking lot access control.</li>
+                    </ul>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-header">
+                        <div class="entry-title">Sepanta Robotic Research Foundation (SRRF)</div>
+                        <div class="entry-date">2014 - 2015</div>
+                    </div>
+                    <div class="entry-subtitle">Tehran, Iran</div>
+                    <ul>
+                        <li>Collaborated in the design and implementation of an <strong>OCR system</strong> for Persian scripts.</li>
+                    </ul>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-header">
+                        <div class="entry-title">Mehregan Danesh Pazhooh</div>
+                        <div class="entry-date">2009 - 2014</div>
+                    </div>
+                    <div class="entry-subtitle">Tehran, Iran</div>
+                    <ul>
+                        <li>Collaborated on the development of an <strong>in-house CRM software</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Research Interests Section -->
+            <div class="section">
+                <h2>🔬 Research Interests</h2>
+                <ul class="interests-list">
+                    <li>Machine Learning and Deep Learning methodologies</li>
+                    <li>Deep Generative Models, including Diffusion Models and Rectified Flow Models</li>
+                    <li>Inverse Problems using Score-based Diffusion Models</li>
+                    <li>Exploration of Latent Space through Dimensionality Reduction Methods</li>
+                    <li>Time Series Forecasting</li>
+                    <li>Investigating the influence of consciousness on the generation of random numbers</li>
+                </ul>
+            </div>
+
+            <!-- Technical Skills Section -->
+            <div class="section">
+                <h2>🛠️ Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-label">Programming Languages</div>
+                        <div class="skill-value">Delphi, C++, Python</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-label">Python IDEs</div>
+                        <div class="skill-value">Jupyter Notebook, Google Colab, VSCode, PyCharm, Cursor</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-label">Python Libraries</div>
+                        <div class="skill-value">PyTorch, Pandas, NumPy, Matplotlib, Scikit-Learn, SciPy, OpenCV, Seaborn, Darts (time series forecasting)</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-label">Model Development Tools</div>
+                        <div class="skill-value">Hydra (configuration management), TensorBoard (visualization), MLflow, Optuna (hyperparameter optimization), Ray (deep learning fine-tuning), Captum (Integrated Gradients for feature selection)</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-label">Tools & Infrastructure</div>
+                        <div class="skill-value">Git, Linux, LaTeX, Word, Excel, PowerPoint</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publications Section -->
+            <div class="section">
+                <h2>📚 Publications</h2>
+                <div class="publication">
+                    <strong>[1]</strong> H. Sagha, S. B. Shouraki, H. Khasteh and M. Dehghani, 
+                    <em>"Real-Time IDS Using Reinforcement Learning,"</em> in <strong>IEEE Second International Symposium on Intelligent Information Technology Application</strong>, Shanghai, 2008.
+                </div>
+                <div class="publication">
+                    <strong>[2]</strong> H. Sagha, S. Kasaei, E. Enayati, M. Dehghani, 
+                    <em>"Finding Sparse Features in Face Detection Using Genetic Algorithms,"</em> in <strong>IEEE International Conference on Computational Cybernetics</strong>, 2008.
+                </div>
+            </div>
+
+            <!-- Academic Activities Section -->
+            <div class="section">
+                <h2>📖 Academic Activities</h2>
+                <div class="academic-activities">
+                    Presented various academic topics during university courses, including: Pitch Estimation in Speech using Fuzzy Methods, Rotation-Invariant Face Recognition, Voice Transformation and Modification, Time-Varying Spectrum Estimation by Fuzzy Methods, Virtual Reality (VR), Multi-objective Optimization using Evolutionary Algorithms, Tensor Methods in Computer Vision and Deep Learning, Discrete Contrastive Diffusion, Contrastive Clustering, Denoising Diffusion Models.
+                </div>
+            </div>
+
+            <!-- Honors & Awards Section -->
+            <div class="section">
+                <h2>🏆 Honors & Activities</h2>
+                <ul class="honors-list">
+                    <li>Ranked 25th nationally in the M.Sc. Computer Engineering Entrance Exam (2006)</li>
+                    <li>Ranked 37th nationally in the M.Sc. Computer Science Entrance Exam (2006)</li>
+                    <li>Provincial winner in the 4th Kharazmi Young Festival for "Real-time Voice Conversion Software" (2002)</li>
+                    <li>Provincial winner in the 5th Kharazmi Young Festival for "Machine Vision" (2003)</li>
+                    <li>Official software registration at the High Council of Informatics, Management and Planning Organization (2006)</li>
+                    <li>Winner of Sharif Business Plan Competition (2007) for "Mobile Text-to-Speech Software"</li>
+                    <li>Selected for the 2nd Innovation Festival, University of Tehran (2017) for "Cloud-based System for Attendance Tracking"</li>
+                    <li>Selected for the 3rd Innovation Festival, University of Tehran (2018) for "Smart System for Book Provision and Exchange"</li>
+                    <li>Selected for IdeaTap Event, Qom Science and Technology Park (2019) for "Specialized Simulator for Sensitive and Critical Environments"</li>
+                    <li>Selected for the Innovation Festival, University of Tehran (2020) for "VR and AR-based Simulator for Sensitive and Critical Environments"</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
